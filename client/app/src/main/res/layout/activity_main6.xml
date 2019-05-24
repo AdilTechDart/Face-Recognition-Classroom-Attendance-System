@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/picture1"
+    tools:context="com.example.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/successname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        />
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/button_control"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="课程与学生管理"
+            android:drawableLeft="@drawable/users"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dip"   />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button android:id="@+id/button_sign"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="选择照片分析"
+            android:drawableLeft="@drawable/add"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dip"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_gyx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看签到记录(仅显示当前课程的签到记录)"
+        android:drawableLeft="@drawable/vision"
+        android:paddingLeft="20dip"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dip"
+        />
+
+
+
+    <LinearLayout android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+
+        >
+
+        <EditText android:id="@+id/et_in"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="请输入课程名称"
+            android:singleLine="true"
+            />
+
+        <EditText android:id="@+id/et_time"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="请输入课程序号"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button android:id="@+id/button_addcourse1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="记录上课数据"
+            android:drawableLeft="@drawable/pen"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dip"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button android:id="@+id/button_f"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="刷新签到数据"
+            android:drawableLeft="@drawable/repeat"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dip"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button android:id="@+id/button_searchcourse1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="查询历史数据"
+            android:drawableLeft="@drawable/magnifier"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dip"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Text_t_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25sp"/>
+
+
+</LinearLayout>

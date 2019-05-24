@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/picture4"
+    tools:context="com.example.myapplication.MainActivity">
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <Button
+        android:id="@+id/button_t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照并上传"
+        />
+
+    <Button
+        android:id="@+id/choose_from_album_t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从相册选择上传" />
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="识别签到" />
+
+    <ImageView
+        android:id="@+id/imageView_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:maxHeight="300dp"
+        android:maxWidth="500dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Text_t_print1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"/>
+    </LinearLayout>
+</LinearLayout>

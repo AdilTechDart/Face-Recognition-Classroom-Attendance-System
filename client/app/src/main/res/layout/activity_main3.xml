@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/picture1"
+    android:orientation="vertical"
+
+    tools:context="com.example.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/successname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+
+
+        <Button android:id="@+id/take_photo"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="更新人脸数据"
+            android:drawableLeft="@drawable/camera"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dip"/>
+
+
+
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button android:id="@+id/button_a"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="添加人脸数据(将信息上传至学生人脸库)"
+            android:drawableLeft="@drawable/contacts"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dip"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/et_studentname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入人脸姓名"
+            android:singleLine="true"
+            android:layout_weight="1"
+            />
+        <Button android:id="@+id/button_set"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="设置人脸标识"
+            android:drawableLeft="@drawable/pen"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dip"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/et_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入查询名字"
+            android:singleLine="true"
+            android:layout_weight="1"
+            />
+
+        <Button android:id="@+id/button_v"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="查看签到情况"
+            android:drawableLeft="@drawable/vision"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dip"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/Text_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25sp"/>
+
+
+</LinearLayout>
